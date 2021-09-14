@@ -1,0 +1,19 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8081
+# 应用名称
+spring:
+  profiles:
+    active: dev
+  application:
+    name: website
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      connection-timeout: 2000
+      maximum-pool-size: 15
+      max-lifetime: 120000
+  servlet:
+    multipart:
+      maxFileSize: 5MB
+      maxRequestSize: 7MB
