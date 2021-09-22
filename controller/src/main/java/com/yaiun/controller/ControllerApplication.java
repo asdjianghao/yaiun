@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
@@ -13,7 +14,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 @EnableAsync(proxyTargetClass = true)
 @EnableCaching(proxyTargetClass = true)
-@MapperScan(basePackages = "com.yaiun.dao.mapper")
+@ComponentScan({"com.yaiun","com.yaiun.dao"})
 public class ControllerApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {

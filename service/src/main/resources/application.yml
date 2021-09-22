@@ -17,7 +17,3 @@ spring:
     multipart:
       maxFileSize: 5MB
       maxRequestSize: 7MB
-mybatis-plus:
-  type-aliases-package: com.yaiun.common.model
-  mapper-locations: classpath:/mapper/*.xml
-

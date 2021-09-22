@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    name: defaultDataSource
+    url: jdbc:mysql://47.96.31.212:3306/yaiun_db?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: yaiun_root
+    password: YaiunRoot123456.
+  redis:
+    host: 47.96.31.212
+    password:
+    port: 6379
+    database: 1
